@@ -1,0 +1,2 @@
+# karabiner
+My karabiner config
