@@ -16,6 +16,78 @@
                 },
                 "rules": [
                     {
+                        "description": "open alacritty",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Alacritty.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "open chrome",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'Google Chrome.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "open neteaseMusic",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "slash",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "open -a 'NeteaseMusic.app'"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change right_command + i/j/k/l to Arrows",
                         "manipulators": [
                             {
@@ -165,44 +237,6 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_command",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_command"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
                                     "key_code": "n",
                                     "modifiers": {
                                         "mandatory": [
@@ -253,7 +287,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "8",
+                                        "key_code": "6",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -275,29 +309,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "0",
-                                        "modifiers": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "j",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "9",
+                                        "key_code": "5",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -319,6 +331,28 @@
                                 },
                                 "to": [
                                     {
+                                        "key_code": "4",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
                                         "key_code": "7",
                                         "modifiers": [
                                             "left_shift"
@@ -326,15 +360,10 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "open alacritty",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
-                                    "key_code": "return_or_enter",
+                                    "key_code": "h",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command"
@@ -346,19 +375,17 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Alacritty.app'"
+                                        "key_code": "8",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "open chrome",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
-                                    "key_code": "b",
+                                    "key_code": "u",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command"
@@ -370,19 +397,17 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'Google Chrome.app'"
+                                        "key_code": "9",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "open neteaseMusic",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
-                                    "key_code": "slash",
+                                    "key_code": "o",
                                     "modifiers": {
                                         "mandatory": [
                                             "left_command"
@@ -394,31 +419,8 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "open -a 'NeteaseMusic.app'"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "open Navcicat",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "open -a 'Navicat Premium.app'"
+                                        "key_code": "0",
+                                        "modifiers": "left_shift"
                                     }
                                 ],
                                 "type": "basic"
@@ -574,16 +576,6 @@
                             "to": [
                                 {
                                     "key_code": "backslash"
-                                }
-                            ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": [
-                                {
-                                    "apple_vendor_top_case_key_code": "keyboard_fn"
                                 }
                             ]
                         }

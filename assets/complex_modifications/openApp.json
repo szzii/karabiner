@@ -1,65 +1,85 @@
 {
-  "title": "Open application",
-  "rules": [
-    {
-      "description": "open alacritty",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "modifiers": {
-              "mandatory": ["left_command"],
-              "optional": ["any"]
-            },
-            "key_code": "return_or_enter"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Alacritty.app'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "open chrome",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "modifiers": {
-              "mandatory": ["left_command"],
-              "optional": ["any"]
-            },
-            "key_code": "b"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome.app'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "open neteaseMusic",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "modifiers": {
-              "mandatory": ["left_command"],
-              "optional": ["any"]
-            },
-            "key_code": "slash"
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'NeteaseMusic.app'"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"title": "Open application",
+	"rules": [
+		{
+			"description": "open alacritty",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"modifiers": {
+							"mandatory": [ "left_command" ],
+							"optional": [ "any" ]
+						},
+						"key_code": "return_or_enter"
+					},
+					"to": [
+						{
+							"shell_command": "open -a 'Alacritty.app'"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "open Navcicat",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"modifiers": {
+							"mandatory": [ "left_command" ],
+							"optional": [ "any" ]
+						},
+						"key_code": "g"
+					},
+					"to": [
+						{
+							"shell_command": "open -a 'Navicat Premium.app'"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "open chrome",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"modifiers": {
+							"mandatory": [ "left_command" ],
+							"optional": [ "any" ]
+						},
+						"key_code": "b"
+					},
+					"to": [
+						{
+							"shell_command": "open -a 'Google Chrome.app'"
+						}
+					]
+				}
+			]
+		},
+		{
+			"description": "open neteaseMusic",
+			"manipulators": [
+				{
+					"type": "basic",
+					"from": {
+						"modifiers": {
+							"mandatory": [ "left_command" ],
+							"optional": [ "any" ]
+						},
+						"key_code": "slash"
+					},
+					"to": [
+						{
+							"shell_command": "open -a 'NeteaseMusic.app'"
+						}
+					]
+				}
+			]
+		}
+	]
 }
